@@ -42,12 +42,45 @@ a{
 h1{
     font-size: 250px;
     color: var(--very-light-grey);
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    z-index: 1;
 }
 h2{
     font-size: 72px;
+    padding-bottom: 50px;
+    line-height: 60px;
 }
 p{
     color: var(--dark-grey);
+}
+.contactheroimg{
+    background-image: url(./images/Contactheroimg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 640px;
+    height: 720px;
+}
+.heroart{
+    /* border: solid; */
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 60%;
+    bottom: 0%;
+    right: 0%;
+    padding-inline: 5%;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.secthero{
+    display: flex;
+    position: relative;
+    /* border: solid blue; */
 }
 button{
     border: none;

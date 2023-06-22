@@ -46,7 +46,7 @@ button{
     width: 100%;
     height: 720px;
     /* border: solid; */
-    background-image: url(/Slideone.png);
+    background-image: url(./images//Slideone.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -111,7 +111,7 @@ h2{
     left: -15%;
 }
 .pg2img{
-    background-image: url(/Pg2.png);
+    background-image: url(./images//Pg2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,7 +139,7 @@ h2{
     /* border: solid  blue; */
 }
 .About-us{
-    background-image: url(/aboutuspg3.png);
+    background-image: url(./images//aboutuspg3.png);
     height: 560px;
     display: flex;
     align-items: center;
@@ -186,7 +186,7 @@ h2{
    display: flex; 
 }
 .feat1{
-    background-image: url(/Featured1.png);
+    background-image: url(./images//Featured1.png);
     width: 350px;
     height: 560px;
     background-position: center;
@@ -195,7 +195,7 @@ h2{
     margin-right: 30px;
 }
 .feat2{
-    background-image: url(/Featured2.png);
+    background-image: url(./images//Featured2.png);
     width: 350px;
     height: 560px;
     background-position: center;
@@ -204,7 +204,7 @@ h2{
     margin-right: 30px;
 }
 .feat3{
-    background-image: url(/Featured3.png);
+    background-image: url(./images//Featured3.png);
     width: 350px;
     height: 560px;
     background-position: center;
@@ -215,7 +215,7 @@ h2{
     display: none;
 }
 .featab1{
-    background-image: url(/featured1tab.png);
+    background-image: url(./images//featured1tab.png);
     height: 200px;
     margin-bottom: 30px; 
     background-position: center;
@@ -223,7 +223,7 @@ h2{
     background-size: cover;
 }
 .featab2{
-    background-image: url(/featured2tab.png);
+    background-image: url(./images//featured2tab.png);
     height: 200px;
     margin-bottom: 30px;
     background-position: center;
@@ -231,7 +231,7 @@ h2{
     background-size: cover;
 }
 .featab3{
-    background-image: url(/featured3tab.png);
+    background-image: url(./images//featured3tab.png);
     height: 200px;
     background-position: center;
     background-repeat: no-repeat;
