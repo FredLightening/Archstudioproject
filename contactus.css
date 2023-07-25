@@ -10,6 +10,7 @@
     --light-grey: #C8CCD8;
     --very-light-grey: #EEEFF4;
     --red:#DF5656;
+    --h1:#1B1D23;
 }
 .main {
     margin-inline: 11.458%;
@@ -30,6 +31,26 @@ header{
     margin-left: 200px;
     white-space: nowrap;
 }
+.nava{
+    position: relative;
+}
+.nava::after{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60%;
+    height: 2px;
+    background: var(--h1);
+
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: transform ease-in 250ms;
+}
+.nava:hover::after{
+    transform: scaleX(1);
+    transform-origin:right ;
+}
 .menu-cont{
     display: none;
 }
@@ -41,7 +62,7 @@ a{
 }
 h1{
     font-size: 250px;
-    color: var(--very-light-grey);
+    color: var(--h1);
     position: absolute;
     top: 15%;
     left: 20%;
@@ -81,6 +102,7 @@ p{
     display: flex;
     position: relative;
     /* border: solid blue; */
+    margin-bottom: 100px ;
 }
 button{
     border: none;
@@ -88,10 +110,56 @@ button{
 .small-black-logo{
     display: none;
 }
+.pbold{
+    font-weight: bold;  
+    padding-bottom: 20px;
+}
+.pboldmap{
+    font-weight: bold;
+    display: inline-block;
+}
 .arrow{
     width:30px;
     padding-left: 5px;
 }
+.sparrow{
+    width:30px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.mapsect{
+    background-image: url(/images/Map.png);
+    height: 560px;
+    margin-bottom: 50px;
+}
+.sectdet{
+    display: flex;
+    gap: 80px;
+}
+.consect{
+    display: flex;
+    gap: 100px;
+}
+input{
+    border: none;
+    border-bottom: solid 1px;
+}
+textarea{
+    border: none;
+    border-bottom: solid 1px;
+    padding-bottom: 10px;
+}
+/* .details{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+} */
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 footer{
     display: flex;
     /* justify-content: space-between; */

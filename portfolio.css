@@ -27,6 +27,26 @@ header{
     margin-left: 200px;
     white-space: nowrap;
 }
+.nava{
+    position: relative;
+}
+.nava::after{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform ease-in 250ms;
+}
+.nava:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
 .menu-cont{
     display: none;
 }

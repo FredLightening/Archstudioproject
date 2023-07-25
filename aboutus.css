@@ -10,9 +10,16 @@
     --light-grey: #C8CCD8;
     --very-light-grey: #EEEFF4;
     --red:#DF5656;
+    --grey:#696A6A;
+}
+.hide{
+    display: none;
 }
 .main {
     margin-inline: 11.458%;
+}
+h3{
+    font-size: 32px;
 }
 header{
     display: flex;
@@ -30,6 +37,26 @@ header{
     margin-left: 200px;
     white-space: nowrap;
 }
+.nava{
+    position: relative;
+}
+.nava::after{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60%;
+    height: 2px;
+    background: var(--grey);
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform ease-in 250ms;
+}
+.nava:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
 .menu-cont{
     display: none;
 }
@@ -41,9 +68,9 @@ a{
 }
 h1{
     font-size: 250px;
-    color: var(--very-light-grey);
+    color: var(--grey);
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 30%;
     z-index: 1;
 }
@@ -82,6 +109,7 @@ p{
     display: flex;
     position: relative;
     /* border: solid blue; */
+    margin-bottom: 120px;
 }
 
 button{
@@ -93,6 +121,53 @@ button{
 .arrow{
     width:30px;
     padding-left: 5px;
+}
+.pg2{
+    /* border: solid; */
+    margin-bottom: 120px;
+}
+.pg2img{
+    background-image: url(./images/Aboutpg2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:50% ;
+    /* border: solid; */
+}
+.pg2-text{
+    color: var(--dark-grey);
+    width: 50%;
+    height: 100%;
+    /* border: solid red; */
+    margin-right: 40px;
+    margin-top: 100px;
+}
+.pg2-text>h2{
+    padding-bottom: 30px;
+    color: black;
+    padding-bottom: 80px;
+}
+.pg2-text>p{
+    padding-bottom: 30px;
+}
+.pg2-items{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    /* border: solid  blue; */
+}
+.fleapics{
+    display: flex;
+    gap: 30px;
+}
+.secleapics{
+    display: flex;
+    gap: 30px;
+}
+.Tleaders{
+    display: flex;
+    gap: 70px;
+    margin-bottom: 80px;
 }
 footer{
     display: flex;
@@ -129,6 +204,11 @@ footer{
     .navi{
         margin-left: 100px;
     }
+    h1{
+        font-size: 120px;
+        top: 30%;
+        left: 45%;
+    }
     
     .black-logo{
         display: none;
@@ -138,6 +218,17 @@ footer{
     }
     .footbut{
         padding: 15px 5px;
+    }
+    .pg2img{
+        display: none;
+    }
+    .pg2-text{
+        width: 100%;
+    }
+    .Tleaders{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 }
 
@@ -154,6 +245,15 @@ footer{
     header{
         justify-content: space-between;
     }
+    h1{
+        display: none;   
+    }
+    h2{
+        font-size: 40px;
+        padding-bottom: 20px;
+    line-height: 40px;
+    }
+    
     .menu-cont{
         display: contents;
         /* margin-left: 150px; */
@@ -171,5 +271,20 @@ footer{
     }
     .footbut{
         padding: 15px 25px;
+    }
+    .fleapics{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .secleapics{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Tleaders{
+        display: flex;
+        gap: 70px;
+        margin-bottom: 80px;
     }
 }

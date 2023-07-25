@@ -10,6 +10,7 @@
     --light-grey: #C8CCD8;
     --very-light-grey: #EEEFF4;
     --red:#DF5656;
+    --grey:#6D839F;
 }
 header{
     display: flex;
@@ -26,6 +27,26 @@ header{
     justify-content: center;
     margin-left: 200px;
     white-space: nowrap;
+}
+.nava{
+    position: relative;
+}
+.nava::after{
+    content: " ";
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    width: 60%;
+    height: 2px;
+    background: var(--grey);
+
+    transform: scale(0);
+    /* transform-origin: right; */
+    transition: transform ease-in 250ms;
+}
+.nava:hover::after{
+    transform: scaleX(1);
+    /* transform-origin: left; */
 }
 .menu-cont{
     display: none;
@@ -105,10 +126,10 @@ h2{
 }
 .giant-wel{
     font-size: 250px;
-    color: var(--very-light-grey);
+    color: var(--grey);
     position: absolute;
     top: -20%;
-    left: -15%;
+    left: -10%;
 }
 .pg2img{
     background-image: url(./images//Pg2.png);
@@ -123,7 +144,7 @@ h2{
     width: 50%;
     height: 100%;
     /* border: solid red; */
-    /* margin-left: 70px; */
+    margin-right: 40px;
     margin-top: 180px;
 }
 .pg2-text>h2{
